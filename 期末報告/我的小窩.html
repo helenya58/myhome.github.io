@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>自我介紹</title>
+        <style>
+                body {
+                background-image: url("https://i.postimg.cc/yYZqkjLL/Pngtree-corporate-company-promotion-ppt-background-1020963.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover
+                }
+
+                #head{
+                background:rgba(255,255,255,0.5);
+                text-align:center;
+                color:rgb(255, 163, 181);
+                }
+
+                #left{
+                float:left;
+                background:rgba(248, 230, 240,0.8);
+                width:15%;
+                padding-top: 12px;
+                padding-left: 12px;
+                border:15px dotted rgba(219, 112, 147,0.8);
+                padding:5px;
+                margin:auto;
+                height:auto;
+                }
+
+                        .int{color:rgb(128, 0, 0);
+                             font-size: 20px;
+                             font-weight:bold;
+                        }
+                        .ins{border-left:solid #FFF0F5 1em;
+                             padding:1px;
+                             margin-top:0.5px;
+                             margin-bottom:0.5px
+                         }
+                        .inb {border-left:solid #FFE4E1 1.5em;
+                              padding:1px;
+                              margin:auto;
+                         }
+                        .inc {border-left: solid #FFB6C1 2em;
+                              padding:1px;
+                              margin-top:0.5px;
+                              margin-bottom:0.5px
+                        }
+                        #ulist {background:rgba(300, 300, 300, 1);
+                                border:solid rgba(250,250,250,0.9) 5px;
+                                border-radius:10px;
+                                color:#ff7d7f;
+                                margin:10px;
+                        }
+                        #olist {background:rgba(300, 300, 300, 1);
+                                border:solid rgba(250,250,250,0.9) 5px;
+                                border-radius:10px;
+                                color:#bfb161;
+                                margin:10px;
+                        }
+ 
+                
+                #content{
+                        background:rgba(255, 250, 240,0.8);
+                        text-align:center;
+                        margin-left:18%;
+                        margin-right:18%;
+                        padding-top: 12px;
+                        border:5px solid rgba(250, 230, 230,0.9);
+                        border-radius: 10px;
+                        border-left:150px solid rgba(255, 228, 181,0.5);
+                        border-right:150px solid rgba(255, 228, 181,0.5);
+                        height:auto;
+                }
+                                .eng {border-bottom: 5px dotted lightgreen;}
+                                .sin {border-bottom: 5px dotted lightblue;}
+                                .inline{font-size: small;
+                                        font-style: oblique;}
+
+                #right{
+                        float:right;
+                }
+                        
+                        #aque{
+                                float:right;
+                                background:rgba(240, 255, 255,0.6);
+                                padding-left: 12px;
+                                padding-bottom:10px;
+                                border:5px solid rgba(250, 230, 230,0.9);
+                                border-radius: 10px;
+                                text-align:center;
+                        }
+                                .oblique {
+                                        font-style: oblique;
+                                        color:rgb(255, 163, 181);
+                                        font-size: 30px;
+                                        
+                                }
+                                .my{
+                                        background-color:rgba(255, 200, 200, 0.95);
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                       
+                                }
+                        #table{
+                                background:rgba(250, 235, 215, 0.5);
+                                float:right;
+                                clear:right;
+                                margin:auto;
+                                border-collapse: collapse;
+                                width:72%;
+                        }
+                        #a{
+                                float:right;
+                                background:rgba(240, 255, 255,0.6);
+                                margin:auto;
+                                padding-bottom:10px;
+                                border:5px solid rgba(250, 230, 230,0.9);
+                                border-radius: 10px;
+                                text-align:center;
+                                clear:right;
+                                width:70%;
+        
+                        }
+
+                        .selected{
+                                background:#eec6d3;
+                                border: 2px solid #eec6d3;
+                                background-color: #f8e8f1;
+                                padding: 4px; 
+                        }
+
+                        .small{
+                                width: 100px;
+                                height: 100px;
+                                margin:2px;
+                                padding:2px;
+                                border:1px rgb(206, 164, 187) solid;
+                                object-fit: cover;
+                        }
+
+                        #big {
+                                width: auto;
+                                height: 333px;
+                                object-fit: contain; 
+                        }
+
+
+                #foot{
+                       
+                        background:#F0FFFF;
+                        text-align:center;
+                        clear:both;
+                        background:#F0FFFF;
+                        text-align:center;
+                        margin:auto;
+                }
+
+                .hide{ display:none; }
+
+        </style>
+        <script>
+                function addmessage(){
+                        var message=document.getElementById("message");       
+                if(
+                        message.value ==""){ alert("溫馨提醒~先輸入內容喔~");
+                }
+                else{
+                        var txtNode = document.createTextNode(message.value);
+                        var li = document.createElement("li");
+                        li.appendChild(txtNode);
+                        var list = document.getElementById("list");
+                        list.appendChild(li);
+                        document.getElementById("messageCount").innerText = list.children.length;
+                }
+                }
+                function toggleMenu(number){
+                        var menu=document.getElementById("m-"+number);
+                        menu.classList.toggle("hide");
+                }
+
+                setInterval(play,3000);
+                var index=0;
+
+                function play(){
+                var imgs = document.getElementById("travel").
+                        getElementsByTagName("img");
+                var bigImg = document.getElementById("big");
+
+                imgs[index].classList.remove("selected");
+                index++;
+
+                if(index == imgs.length) index=0;
+                imgs[index].classList.add("selected");
+                bigImg.setAttribute("src",imgs[index].getAttribute("src"));
+                }
+
+        </script>
+
+</head>
+<body>
+        <div id="head">
+                <h1>ABOUT ME</h1>
+        </div> 
+
+        <div id="left">
+                <p class="int">興趣</p>
+                <p class="ins">看小說</p></br>
+                <p class="inb">騎腳踏車</p><br>
+                <p class="inc"><b>出去玩</b></p>
+
+                <div id="ulist">
+                        <div onclick="toggleMenu(1);">未來想去的地方~</div>
+                        <ul id="m-1">
+                                <li>北關海潮</li>
+                                <li>櫻花陵園</li>
+                                <li>梅花湖</li>
+                                <li>南山四季</li>
+                                <li>思源啞口</li>
+                                <li>草嶺古道</li> 
+                        </ul>
+                </div>
+                <div id="olist">
+                <div onclick="toggleMenu(2);"><b>人生計畫~</b></div>
+                        <ol id="m-2">
+                                <li>賺到第一桶金</li>
+                                <li>炒股票</li>
+                                <li>發展副業</li> 
+                                        <dd>-開店</dd>
+                                <li>賺到錢</li>
+                                        <dd>-環遊世界</dd>
+                        </ol>
+                </div>
+
+        </div> 
+
+        <div id="right">
+                <div id="aque">
+                        <p class="oblique">Mi restaurante compuesto</p>
+                        <p class="my">我的複合式餐飲店</p>
+                        <b>早餐/輕食/消夜/</b></br>
+                        <h2 sytle="color:rgb(91, 210, 203)"><a href="https://codepen.io/Helenya/pen/VwGQXYM">入口</h2></a>
+                </div>
+
+                <table id="table">
+                        <tr><th colspan="4" style="background-color:#FFF0F5;">已達成成就-宜蘭</tr></tr>
+                        <tr> 
+                        <th>by 腳踏車</th> <th>by 公車</th> <th>by 火車</th> <th>by 機車</th> 
+                        </tr>
+
+                        <tr> 
+                        <td>羅東林場</td>
+                        <td>張美阿嬤農場</td>
+                        <td>羅東夜市</td>
+                        <td>空ㄟ農場</td>
+                        </tr>
+
+                        <tr> <td>羅東運動公園</td>
+                        <td>壯圍</td>
+                        <td>南方澳</td>
+                        </tr>
+
+                        <tr>
+                        <td>蘇澳隧道</td>
+                        <td><img src="https://i.postimg.cc/MHSRkS7V/IMG20230305151944.jpg" alt="花" width="70" height="100"></p>...待解鎖</td>
+                        <td>頭城老街</td>
+                        <td>頭城吃宵夜</td>
+                        </tr>
+                </table>
+
+                <div id="a">
+                        <h5>缺個一起騎腳踏車的夥伴 為了一個5分鐘的景點騎2小時的也就只有我了吧哈哈<br>
+                        雖然我的重點在於騎車</h5>
+                </div>
+
+        </div>
+
+        <div id="content">
+                <h1>詹   蕙   華</h1><br>  
+                <p class="eng">環境工程學系 Environment Engineering</p><br>
+                <p class="sin">射手座Sagittarius</p>
+                我有個檔車夢~<span class="inline">只是現在還沒考到駕照</span><br>
+                        現在的小目標是在畢業前可以環宜蘭一圈~
+
+
+                <div class="main">
+                  <h2 style="color:rgb(255, 102, 150);"><font face="標楷體">空ㄟ農場</font><br></h2>
+                  <img src="https://i.postimg.cc/wvNxKf39/IMG-20211218-191401.jpg" alt="空ㄟ農場" width="800"><br>
+                </div>
+
+                <div>
+                        <img id="big" src="https://i.postimg.cc/NFwyGGfz/1661600801923.jpg">
+                </div>
+
+                <div id="travel">
+                        <img class="small selected" src="https://i.postimg.cc/NFwyGGfz/1661600801923.jpg" >
+                        <img class="small" src="https://i.postimg.cc/bwGqMcqD/IMG-20220522-120104.jpg" >
+                        <img class="small" src="https://i.postimg.cc/VsStnFZz/IMG-20220617-152409-1.jpg">
+                        <img class="small" src="https://i.postimg.cc/D0pDyFSs/IMG20221027115601.jpg">
+                        <img class="small" src="https://i.postimg.cc/tgbrb7Bw/IMG20221027132135.jpg">
+                        <img class="small" src="https://i.postimg.cc/qRVp4sP0/IMG20221027142315.jpg">
+                        <img class="small" src="https://i.postimg.cc/HsZHVDq6/IMG20221112112141.jpg">
+                        <img class="small" src="https://i.postimg.cc/MTSJhWBp/IMG-20220916-172330.jpg">
+                        <img class="small" src="https://i.postimg.cc/wvNxKf39/IMG-20211218-191401.jpg">               
+                </div>
+
+                <div id = "mess">
+                        <h2>留言板</h2>
+                        <p>留言<input id="message" type="text">
+                        <button onclick="addmessage()">新增</button>
+                        </p>
+                <ol id="list"></ol>
+                <p>現在有<span id="messageCount">0</span>則留言</p>
+                </div>             
+        </div> 
+        <div id="foot">
+                <i><h3>至理名言</h3>
+                船到橋頭自然直船到橋頭自然直<br>
+                </i>
+        </div> 
+
+</body>
+</html>

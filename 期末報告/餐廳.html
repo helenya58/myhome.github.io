@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>餐廳</title>
+        <style>
+                body{background: rgba(0,  0, 35,0.9)}
+h1{background-color:rgba(50, 20, 128,0.5)}
+h1{color: white}
+h2{color: white}
+h3{color: white}
+fieldset{color:white}
+option {color:#35477c}
+optgroup {color:#503048}
+form {color:#F5FFFA}
+
+.tittle {font-weight:bold;font-size:20px}
+.floor {font-size:20px}
+.content{width:400px;padding:50px;border:2px dashed blue;margin-top:20px;margin-bottom:20px}
+.keyword{color:pink}
+        </style>
+</head>>
+
+<body>
+
+        <div class="tittle"><h1>早餐/輕食/消夜/</h1><br>
+                  <fieldset><legend><h3>營業時間</h3><br></legend>
+                早上:06:00~11:00<br>  
+                晚上:18:00~<span class="keyword">隔天</span>2:00<br>  
+                </fieldset>
+                </div>  
+                <form name="resta">  
+                請選擇用餐時間:<input name="dinnertime" type="time"value="21:00"><br>
+                用餐種類:
+                <select name="food" size="4" multiple>
+                  <option value="1">正餐
+                  <option value="2">甜點
+                  <option value="3">消夜
+                  <option value="4">酒類
+                </select><br>
+                <h3>正餐</h3>
+                今天我想來點...<select name="tour">
+                  <optgroup label="早餐">
+                    <option value="1">西式餐點拼盤
+                    <option value="2">中式傳統美味  
+                  </optgroup>
+                  <optgroup label="晚餐">
+                    <option value="1">美式焦香嫩肩牛小排
+                    <option value="2">義式濃情拉絲焗烤海鮮義大利麵  
+                  </optgroup>
+                </select>  
+                <h3>甜點</h3>
+                今天我想來點...<select name="dessert">
+                  <optgroup label="蛋糕">
+                    <option value="1">黑森林
+                    <option value="2">草莓
+                    <option value="3">輕乳酪
+                    <option value="4">重乳酪  
+                  </optgroup>
+                  <optgroup label="蛋塔">
+                    <option value="1">葡式
+                    <option value="2">港式  
+                  </optgroup>
+                  <optgroup label="可麗露">
+                   <option value="1">經典香草
+                   <option value="2">焦糖奶茶
+                   <option value="3">京都焙茶
+                   <option value="4">小山園抹茶
+                  </optgroup>
+                  <optgroup label="餅乾">
+                   <option value="1">蘭朵夏
+                   <option value="2">曲其
+                   <option value="3">切片餅乾
+                   <option value="4">蛋白霜 
+                  </optgroup>
+                  </select>
+                <h3>消夜</h3>
+                 今天我想來點... <select name="supper">  
+                  <optgroup label="炸物">
+                   <option value="1">薯條
+                   <option value="2">雞塊
+                   <option value="3">雞米花
+                   <option value="4">炸雞腿 
+                  </optgroup>
+                  <optgroup label="串燒">
+                   <option value="1">牛肉串
+                   <option value="2">豬肉串
+                   <option value="3">雞肉串
+                   <option value="4">蔥肉串 
+                  </optgroup>
+                  </select>
+                  
+                <h3>微醺的夜~酒類</h3><select name="liquor"> 
+                 <optgroup label="清爽小品">
+                  <option value="1">莫西多
+                  <option value="2">柯夢波丹
+                  <option value="3">琴通寧
+                  <option value="4">龍舌蘭日出 
+                 </optgroup>
+                 <optgroup label="不醉不歸">
+                  <option value="1">馬丁尼 
+                  <option value="2">長島冰茶
+                  <option value="3">羅伯塔阿姨
+                  <option value="4">環遊世界
+                  <option value="5">明天見 
+                 </optgroup>
+                </select> 
+                
+                <h3>客製化調酒預定系統</h3><br>
+                <div class="floor">風味:</div>
+                <input name="tase" type="checkbox" value="果香">果香
+                <input name="taste" type="checkbox" value="花香">花香
+                <input name="taste" type="checkbox" value="茶香">茶香
+                <input name="taste" type="checkbox" value="咖啡">咖啡<br>  
+                <div class="content">酸度:
+                不酸<input name="score" type="range" min="1" max="10">很酸<br>
+                甜度:
+                不甜<input name="score" type="range" min="1" max="10">很甜<br>  
+                酒感:
+                輕微<input name="score" type="range" min="1" max="10">濃重<br>  
+                基酒:
+                <input name="taste" type="checkbox" value="琴酒">琴酒
+                <input name="taste" type="checkbox" value="蘭姆酒">蘭姆酒
+                <input name="taste" type="checkbox" value="龍舌蘭">龍舌蘭
+                <input name="taste" type="checkbox" value="伏特加">伏特加
+                <input name="taste" type="checkbox" value="威士忌">威士忌<br>
+                </div> 
+                <hr>  
+                人數:<input name="people" type="number"><br>  
+                是否需要包廂:<input name="choice" type="radio" value="true">是
+                     <input name="choice" type="radio" value="false">否<br>
+                包廂內燈光色彩:<input name="color" type="color" value="#ff6f71">  
+                
+                <hr>  
+                聯絡資訊<br>
+                姓名:<input name="name" type="text"><br>
+                E-mail:<input name="email" type="email"><br>
+                連絡電話:<input name="tel" type="tel"><br>
+                是否願意接受後續優惠資訊<br><input name="cupple" type="checkbox" value="願意">願意
+                <input name="taste" type="checkbox" value="下次一定">再想想  
+                <hr>  
+                備註:<br>
+                <textarea name="comment" rows="5" cols="25"></textarea><br>
+                <input type="reset" value="清除重填">
+                <input type="submit" value="填完送出">  
+                </form>
+        
+</body>
