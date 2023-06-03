@@ -1,0 +1,163 @@
+body {
+        background-image: url("https://i.postimg.cc/yYZqkjLL/Pngtree-corporate-company-promotion-ppt-background-1020963.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover
+        }
+
+        #head{
+        background:rgba(255,255,255,0.5);
+        text-align:center;
+        color:rgb(255, 163, 181);
+        }
+
+        #left{
+        float:left;
+        background:rgba(248, 230, 240,1);
+        width:15%;
+        padding-top: 12px;
+        padding-left: 12px;
+        border:15px dotted rgba(219, 112, 147,0.8);
+        padding:5px;
+        margin:auto;
+        height:auto;
+        }
+
+                .int{color:rgb(128, 0, 0);
+                     font-size: 20px;
+                     font-weight:bold;
+                }
+                .ins{border-left:solid #FFF0F5 1em;
+                     padding:1px;
+                     margin-top:0.5px;
+                     margin-bottom:0.5px
+                 }
+                .inb {border-left:solid #FFE4E1 1.5em;
+                      padding:1px;
+                      margin:auto;
+                 }
+                .inc {border-left: solid #FFB6C1 2em;
+                      padding:1px;
+                      margin-top:0.5px;
+                      margin-bottom:0.5px
+                }
+                #ulist {background:rgba(300, 300, 300, 1);
+                        border:solid rgba(250,250,250,0.9) 5px;
+                        border-radius:10px;
+                        color:#ff7d7f;
+                        margin:10px;
+                }
+                #olist {background:rgba(300, 300, 300, 1);
+                        border:solid rgba(250,250,250,0.9) 5px;
+                        border-radius:10px;
+                        color:#bfb161;
+                        margin:10px;
+                }
+
+        
+        #content{
+                background:rgba(255, 250, 240,0.8);
+                text-align:center;
+                margin-left:18%;
+                margin-right:18%;
+                padding-top: 12px;
+                border:5px solid rgba(250, 230, 230,0.9);
+                border-radius: 10px;
+                border-left:150px solid rgba(255, 228, 181,0.5);
+                border-right:150px solid rgba(255, 228, 181,0.5);
+                height:auto;
+        }
+                        .eng {border-bottom: 5px dotted lightgreen;}
+                        .sin {border-bottom: 5px dotted lightblue;}
+                        .inline{font-size: small;
+                                font-style: oblique;}
+                
+                        .selected{
+                        background:#eec6d3;
+                        border: 2px solid #ff91c8ee;
+                        background-color: #b2dcf5;
+                        padding: 4px; 
+                        }
+                        
+                        #travel{
+                                background:rgba(250, 230, 230,0.5);
+                                border:30px solid rgba(255, 140, 172, 0.5);
+                                border-radius: 70px;
+                                margin:50px;
+                                padding:50px;
+                        }
+
+                .small{
+                        width: 100px;
+                        height: 100px;
+                        margin:2px;
+                        padding:2px;
+                        border:1px rgb(152, 198, 224) solid;
+                        object-fit: cover;
+                }
+
+                #big {
+                        width: auto;
+                        height: 333px;
+                        object-fit: contain; 
+                }
+                        
+        #right{
+                float:right;
+        }
+                
+                #aque{
+                        float:right;
+                        background:rgba(240, 255, 255,0.6);
+                        padding-left: 12px;
+                        padding-bottom:10px;
+                        border:5px solid rgba(250, 230, 230,0.9);
+                        border-radius: 10px;
+                        text-align:center;
+                }
+                        .oblique {
+                                font-style: oblique;
+                                color:rgb(255, 163, 181);
+                                font-size: 30px;
+                                
+                        }
+                        .my{
+                                background-color:rgba(255, 200, 200, 0.95);
+                                font-weight: bold;
+                                font-size: 20px;
+                               
+                        }
+                #table{
+                        background:rgba(250, 235, 215, 1);
+                        float:right;
+                        clear:right;
+                        margin:auto;
+                        border-collapse: collapse;
+                        width:72%;
+                }
+                table, td, th {border: 1px solid;}
+                #a{
+                        float:right;
+                        background:rgba(240, 255, 255,0.9);
+                        margin:auto;
+                        padding-bottom:10px;
+                        border:5px solid rgba(250, 230, 230,0.9);
+                        border-radius: 10px;
+                        text-align:center;
+                        clear:right;
+                        width:70%;
+                }
+
+        #foot{
+               
+                background:#F0FFFF;
+                text-align:center;
+                clear:both;
+                background:#F0FFFF;
+                text-align:center;
+                margin:auto;
+        }
+        #list{background-color:white;}
+
+        .hide{ display:none; }
